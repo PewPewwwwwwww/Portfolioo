@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erick Gozo | Web Developer</title>
+  <meta name="description" content="Portfolio of Erick Gozo — Web Developer specializing in web applications, scalable database systems, and responsive user interfaces." />
+
+  <!-- Favicon Package Links -->
+  <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#090b10" />
+
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Erick_Styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&gt;</span>
+        <span class="brand-name">Erick Gozo</span>
+        <span class="brand-cursor">_</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#stack" class="nav-link">Stack</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="nav-github-btn">
+          GitHub <span>↗</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for Full-Stack Opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </h1>
+
+        <p class="hero-role">Web Developer</p>
+        <p class="hero-description">
+          I build scalable web applications, responsive user interfaces, and reliable database architectures with clean, maintainable code.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+          <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Background Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-label">ABOUT</div>
+        <div class="about-grid">
+          <div class="spec-card">
+            <h3 class="spec-title">Background &amp; Intent</h3>
+            <div class="spec-meta-list">
+              <div class="spec-meta-row">
+                <span class="meta-key">Identity:</span>
+                <span class="meta-val">Erick Gozo</span>
+              </div>
+              <div class="spec-meta-row">
+                <span class="meta-key">Core Role:</span>
+                <span class="meta-val">Full-Stack Web Developer</span>
+              </div>
+              <div class="spec-meta-row">
+                <span class="meta-key">Specialization:</span>
+                <span class="meta-val">React, Node.js, Express, SQL/NoSQL <span>
+              </div>
+              <div class="spec-meta-row">
+                <span class="meta-key">Status:</span>
+                <span class="meta-val highlight-val">Shipping Real-World Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-narrative">
+            <p>
+              I am a web developer passionate about engineering software that solves genuine user problems. I focus on developing full-stack web applications, RESTful APIs, and database-driven workflows where maintainability and clean structure take priority.
+            </p>
+            <p>
+              I take pride in bridging responsive UI architecture with dependable backend services. Rather than adding unnecessary layers of complexity, I build robust, functional applications tailored to immediate community and operational needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="projects-header-row">
+          <div>
+            <div class="section-label">SELECTED PROJECTS</div>
+            <h2 class="section-heading">Featured Implementations</h2>
+            <p class="section-subtext">Production and development deployments demonstrating full-stack architecture.</p>
+          </div>
+          <span class="projects-count">02 Core Systems</span>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 01: CM-HelpHub -->
+          <article class="project-card">
+            <div class="card-terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">cm-helphub.sys // core-v2.4</span>
+              <span class="badge badge-success">Operational / Deployed</span>
+            </div>
+
+            <div class="card-body-grid">
+              <div class="card-primary-col">
+                <div class="project-index">01 / COMMUNITY OPERATIONS</div>
+                <h3 class="project-title">CM-HelpHub</h3>
+                <p class="project-category">Community Support &amp; Issue Resolution Desk</p>
+                <p class="project-summary">
+                  A centralized web application engineered for community issue dispatching, ticket lifecycle management, and real-time moderation. Features role-based access control and transparent resolution progress for users and administrators.
+                </p>
+
+                <div class="card-metadata-box">
+                  <div class="meta-col">
+                    <span class="meta-header">FOCUS DOMAINS</span>
+                    <ul class="meta-bullet-list">
+                      <li>Role-Based Access Control (RBAC)</li>
+                      <li>Stateful Ticket Pipelines</li>
+                      <li>Moderator Review Console</li>
+                      <li>Audit-Logging &amp; History</li>
+                    </ul>
+                  </div>
+                  <div class="meta-col">
+                    <span class="meta-header">KEY CAPABILITIES</span>
+                    <ul class="meta-bullet-list">
+                      <li>Secure session management &amp; auth guards</li>
+                      <li>Real-time ticket category and urgency filters</li>
+                      <li>Moderator dashboard with resolution timelines</li>
+                      <li>Optimized MongoDB schema for rapid indexing</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-secondary-col">
+                <div class="tech-stack-group">
+                  <span class="meta-header">CORE TECH STACK</span>
+                  <div class="pill-cloud">
+                    <span class="tech-pill">React.js</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">Express.js</span>
+                    <span class="tech-pill">MongoDB</span>
+                    <span class="tech-pill">REST API</span>
+                    <span class="tech-pill">JWT Auth</span>
+                  </div>
+                </div>
+
+                <div class="project-action-buttons">
+                  <button type="button" class="btn btn-spec" onclick="openSpecModal('cm-helphub')">
+                    &lt;/&gt; Technical Architecture
+                  </button>
+                  <div class="action-subgroup">
+                    <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-compact">Source</a>
+                    <a href="#" class="btn btn-secondary btn-compact">Live Preview ↗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Ultimate Frisbee Management System -->
+          <article class="project-card">
+            <div class="card-terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">frisbee-management.sys // v1.8</span>
+              <span class="badge badge-accent">Active Development</span>
+            </div>
+
+            <div class="card-body-grid">
+              <div class="card-primary-col">
+                <div class="project-index">02 / ATHLETIC LOGISTICS ENGINE</div>
+                <h3 class="project-title">Ultimate Frisbee Management System</h3>
+                <p class="project-category">Tournament Scheduling, Team Rostering &amp; Match Scoring Engine</p>
+                <p class="project-summary">
+                  A comprehensive sports management platform designed to automate round-robin and elimination brackets, organize player rosters, track field allocations, and provide real-time game scoring updates for athletic tournaments.
+                </p>
+
+                <div class="card-metadata-box">
+                  <div class="meta-col">
+                    <span class="meta-header">FOCUS DOMAINS</span>
+                    <ul class="meta-bullet-list">
+                      <li>Automated Tournament Bracket Generation</li>
+                      <li>Team Rosters &amp; Player Eligibility</li>
+                      <li>Field Allocation Timetables</li>
+                      <li>Real-Time Game Scorekeeper</li>
+                    </ul>
+                  </div>
+                  <div class="meta-col">
+                    <span class="meta-header">KEY CAPABILITIES</span>
+                    <ul class="meta-bullet-list">
+                      <li>Round-robin and double-elimination logic</li>
+                      <li>Live score, turnover, and point logging</li>
+                      <li>Automated standings, points differential, and tie-breakers</li>
+                      <li>Relational tables ensuring schedule consistency</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-secondary-col">
+                <div class="tech-stack-group">
+                  <span class="meta-header">CORE TECH STACK</span>
+                  <div class="pill-cloud">
+                    <span class="tech-pill">React.js</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">Express.js</span>
+                    <span class="tech-pill">MongoDB</span>
+                    <span class="tech-pill">Tailwind CSS</span>
+                  </div>
+                </div>
+
+                <div class="project-action-buttons">
+                  <button type="button" class="btn btn-spec" onclick="openSpecModal('frisbee-system')">
+                    &lt;/&gt; Technical Architecture
+                  </button>
+                  <div class="action-subgroup">
+                    <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-compact">Source</a>
+                    <a href="#" class="btn btn-secondary btn-compact">Live Preview ↗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities / Domains Section -->
+    <section id="capabilities" class="section capabilities-section">
+      <div class="container">
+        <div class="section-label">WHAT I BUILD</div>
+        <h2 class="section-heading">Domains &amp; Capabilities</h2>
+
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <div class="card-icon-tag">&lt;/&gt;</div>
+            <h3 class="capability-title">Frontend Engineering</h3>
+            <p class="capability-text">
+              Building modular, performance-driven web interfaces using React and modern CSS. Focused on accessible navigation, cross-device responsiveness, and resilient client-side state.
+            </p>
+          </div>
+
+          <div class="capability-card">
+            <div class="card-icon-tag">⚙</div>
+            <h3 class="capability-title">Backend &amp; API Services</h3>
+            <p class="capability-text">
+              Engineering RESTful endpoints with Node.js and Express. Implementing robust middleware, payload validation, token authentication, and clean separation of concerns.
+            </p>
+          </div>
+
+          <div class="capability-card">
+            <div class="card-icon-tag">🗄</div>
+            <h3 class="capability-title">Database Architecture</h3>
+            <p class="capability-text">
+              Designing relational schemas with PostgreSQL and flexible document stores using MongoDB. Establishing foreign key constraints, indexing strategies, and optimized queries.
+            </p>
+          </div>
+
+          <div class="capability-card">
+            <div class="card-icon-tag">🖧</div>
+            <h3 class="capability-title">Application Workflows</h3>
+            <p class="capability-text">
+              Automating scheduling engines, ticket life-cycle pipelines, and administrative dashboards that replace tedious manual coordination with dependable digital tools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Inventory -->
+    <section id="stack" class="section stack-section">
+      <div class="container">
+        <div class="section-label">TECHNOLOGY INVENTORY</div>
+        <h2 class="section-heading">Languages, Libraries &amp; Environments</h2>
+
+        <div class="stack-category">
+          <span class="stack-category-label">PROGRAMMING LANGUAGES</span>
+          <div class="pill-cloud">
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <span class="stack-category-label">FRAMEWORKS &amp; RUNTIMES</span>
+          <div class="pill-cloud">
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">Express.js</span>
+            <span class="tech-pill">Vite</span>
+            <span class="tech-pill">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <span class="stack-category-label">DATABASES &amp; CLOUD STORAGE</span>
+          <div class="pill-cloud">
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">pgAdmin</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <span class="stack-category-label">DEVELOPER TOOLING &amp; WORKSPACE</span>
+          <div class="pill-cloud">
+            <span class="tech-pill">Git / GitHub</span>
+            <span class="tech-pill">VS Code</span>
+            <span class="tech-pill">Postman</span>
+            <span class="tech-pill">PowerShell</span>
+            <span class="tech-pill">npm</span>
+            <span class="tech-pill">Vercel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Philosophy -->
+    <section class="section philosophy-section">
+      <div class="container">
+        <div class="section-label">DEVELOPMENT PHILOSOPHY</div>
+        <h2 class="philosophy-quote">"Build. Refine. Deliver. Scale."</h2>
+        <p class="philosophy-text">
+          Good software is not about superfluous visual effects or overly complex abstractions. It is about building resilient systems that remain understandable, maintainable, and dependable.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-label">GET IN TOUCH</div>
+        <h2 class="section-heading">Let's Connect &amp; Collaborate</h2>
+
+        <div class="contact-terminal">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-name">bash — contact</span>
+          </div>
+          <div class="contact-terminal-body">
+            <div class="email-display">gozoerick28@gmail.com</div>
+            <div class="contact-buttons-row">
+              <button type="button" class="btn btn-secondary" id="copyEmailBtn" onclick="copyEmail()">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copyBtnText">Copy Email Address</span>
+              </button>
+              <button type="button" class="btn btn-primary" onclick="handleSendMail('gozoerick28@gmail.com')">
+                Send Mail →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <p class="footer-brand">Erick Gozo</p>
+        <p class="footer-meta">© 2026 Erick Gozo. Built with clean HTML, CSS &amp; JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Technical Architecture Specs -->
+  <div id="specModal" class="modal-backdrop" onclick="closeSpecModal(event)">
+    <div class="modal-window" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span id="modalTitle" class="modal-title-text">architecture.spec</span>
+        <button type="button" class="modal-close-btn" onclick="closeSpecModal()">✕</button>
+      </div>
+      <div id="modalBody" class="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-box">Email copied to clipboard!</div>
+
+  <script src="Erick_Main.js"></script>
+</body>
+</html>
