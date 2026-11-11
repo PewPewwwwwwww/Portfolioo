@@ -3,10 +3,12 @@
    - Typewriter Headline Effect
    - Spec Architecture Modal Data & Controller
    - Clipboard Copy & Fallback Mail Handler
+   - Scroll Reveal Animations
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
   initTypewriter();
+  initScrollReveal();
 });
 
 /* --------------------------------------------------------------------------
@@ -208,4 +210,62 @@ function showToast(message) {
   setTimeout(() => {
     toast.classList.remove("show");
   }, 3000);
+}
+/* --------------------------------------------------------------------------
+   Scroll Reveal Animations
+   Elements fade and slide up as they enter the viewport. Siblings in the
+   same group are staggered. Classes are added by JS so content stays visible
+   if JavaScript is disabled.
+   -------------------------------------------------------------------------- */
+function initScrollReveal() {
+  if (!("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const selectors = [
+    ".hero-container > *",
+    ".section-label",
+    ".section-heading",
+    ".section-subtext",
+    ".projects-count",
+    ".spec-card",
+    ".about-narrative p",
+    ".project-card",
+    ".capability-card",
+    ".stack-category",
+    ".philosophy-quote",
+    ".philosophy-text",
+    ".contact-terminal",
+    ".footer-container > *"
+  ];
+
+  const elements = document.querySelectorAll(selectors.join(","));
+  const staggerStep = 100; // ms between siblings
+  const groupCounts = new Map();
+
+  elements.forEach((el) => {
+    const parent = el.parentElement;
+    const index = groupCounts.get(parent) || 0;
+    groupCounts.set(parent, index + 1);
+    el.style.transitionDelay = `${Math.min(index, 5) * staggerStep}ms`;
+    el.classList.add("reveal");
+  });
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add("is-visible");
+      obs.unobserve(el);
+
+      // Clean up afterwards so hover transitions are not delayed or overridden
+      el.addEventListener("transitionend", function cleanup(e) {
+        if (e.target !== el || e.propertyName !== "opacity") return;
+        el.classList.remove("reveal", "is-visible");
+        el.style.transitionDelay = "";
+        el.removeEventListener("transitionend", cleanup);
+      });
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+
+  elements.forEach((el) => observer.observe(el));
 }
