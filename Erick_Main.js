@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /* --------------------------------------------------------------------------
    Typewriter Effect
    -------------------------------------------------------------------------- */
-const words = ["Erick Gozo", "Web Developer"];
+const words = ["Erick Gozo", "Full-Stack Developer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -57,7 +57,7 @@ function initTypewriter() {
    -------------------------------------------------------------------------- */
 const projectSpecs = {
   "cm-helphub": {
-    title: "cm-helphub.sys // Architecture Specification",
+    title: "CM-HelpHub: Architecture Overview",
     html: `
       <div class="spec-block">
         <div class="spec-block-title">SYSTEM SUMMARY</div>
@@ -87,7 +87,7 @@ PATCH  /api/tickets/:id/resolve   -> Moderator resolution timeline update</pre>
     `
   },
   "frisbee-system": {
-    title: "frisbee-management.sys // Architecture Specification",
+    title: "Ultimate Frisbee Management System: Architecture Overview",
     html: `
       <div class="spec-block">
         <div class="spec-block-title">SYSTEM SUMMARY</div>
@@ -177,7 +177,7 @@ function copyEmail() {
     const btnText = document.getElementById("copyBtnText");
     if (btnText) {
       const original = btnText.textContent;
-      btnText.textContent = "Copied to Clipboard!";
+      btnText.textContent = "Copied!";
       setTimeout(() => {
         btnText.textContent = original;
       }, 2000);
@@ -194,7 +194,7 @@ function handleSendMail(email) {
 
   // Webmail fallback timeout: if the user remains on the page, provide an instant option
   setTimeout(() => {
-    showToast("Tip: Click 'Copy Email Address' or open your mail app.");
+    showToast("If your mail app didn't open, use 'Copy Email' instead.");
   }, 1000);
 }
 
