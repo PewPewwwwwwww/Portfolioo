@@ -117,58 +117,69 @@
           <div>
             <div class="section-label">PROJECTS</div>
             <h2 class="section-heading">Featured Projects</h2>
-            <p class="section-subtext">Full-stack applications covering frontend, backend, and database design.</p>
+            <p class="section-subtext">Production and development deployments demonstrating full-stack engineering.</p>
           </div>
-          <span class="projects-count">2 Projects</span>
+          <span class="projects-count">02 Core Systems</span>
         </div>
 
         <div class="projects-list">
           <!-- Project 01: CM-HelpHub -->
           <article class="project-card">
-            <div class="card-terminal-bar">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
+            <div class="project-card-header">
+              <div class="project-badge-meta">
+                <span class="project-index-tag">01</span>
+                <span class="project-category-tag">Full-Stack Web Platform</span>
               </div>
-              <span class="terminal-title">CM-HelpHub</span>
-              <span class="badge badge-success">Deployed</span>
+              <div class="project-status status-deployed">
+                <span class="status-pulse-dot"></span>
+                <span class="status-label">Deployed / Production</span>
+              </div>
             </div>
 
-            <div class="card-body-grid">
-              <div class="card-primary-col">
-                <div class="project-index">01 / COMMUNITY SUPPORT</div>
+            <div class="project-card-content">
+              <!-- Left Column: Information, Highlights, Stack & Actions -->
+              <div class="project-info-pane">
                 <h3 class="project-title">CM-HelpHub</h3>
-                <p class="project-category">Community Support Ticketing Platform</p>
-                <p class="project-summary">
-                  A web application where community members submit support tickets and moderators track them through to resolution. Includes role-based access control and clear progress tracking for users and administrators.
+                <p class="project-tagline">Community Support &amp; Issue Resolution Platform</p>
+                
+                <p class="project-description">
+                  A centralized support desk application engineered for community issue dispatching, ticket lifecycle management, and real-time moderation. Implements secure role-based access control and transparent resolution progress for users and administrators.
                 </p>
 
-                <div class="card-metadata-box">
-                  <div class="meta-col">
-                    <span class="meta-header">HIGHLIGHTS</span>
-                    <ul class="meta-bullet-list">
-                      <li>Role-Based Access Control (RBAC)</li>
-                      <li>Ticket Status Workflow</li>
-                      <li>Moderator Review Console</li>
-                      <li>Audit Logging &amp; History</li>
-                    </ul>
+                <!-- Key Technical Highlights -->
+                <div class="project-highlights-grid">
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span>Role-Based Access Control</span>
                   </div>
-                  <div class="meta-col">
-                    <span class="meta-header">KEY FEATURES</span>
-                    <ul class="meta-bullet-list">
-                      <li>JWT authentication and protected routes</li>
-                      <li>Ticket filtering by category and priority</li>
-                      <li>Moderator dashboard with resolution timelines</li>
-                      <li>Indexed MongoDB schema for fast queries</li>
-                    </ul>
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                    <span>Stateful Ticket Pipelines</span>
+                  </div>
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <span>Audit Timelines &amp; History</span>
+                  </div>
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                    </svg>
+                    <span>Indexed MongoDB Queries</span>
                   </div>
                 </div>
-              </div>
 
-              <div class="card-secondary-col">
-                <div class="tech-stack-group">
-                  <span class="meta-header">TECH STACK</span>
+                <!-- Core Stack -->
+                <div class="project-tech-wrapper">
+                  <span class="tech-label">CORE STACK</span>
                   <div class="pill-cloud">
                     <span class="tech-pill">React.js</span>
                     <span class="tech-pill">Node.js</span>
@@ -179,13 +190,48 @@
                   </div>
                 </div>
 
-                <div class="project-action-buttons">
+                <!-- Action Buttons -->
+                <div class="project-actions">
                   <button type="button" class="btn btn-spec" onclick="openSpecModal('cm-helphub')">
-                    &lt;/&gt; Architecture Details
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    Architecture Spec
                   </button>
-                  <div class="action-subgroup">
-                    <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-compact">Source</a>
-                  </div>
+                  <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    Source Code
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Code & Architecture Preview Window -->
+              <div class="project-preview-pane">
+                <div class="preview-header">
+                  <span class="preview-file"><span class="code-dot dot-emerald"></span> cm-helphub.routes.js</span>
+                  <span class="preview-tag">REST API &bull; MERN</span>
+                </div>
+                <div class="preview-code-body">
+                  <div class="code-line"><span class="token-comment">// Authentication &amp; Ticket Lifecycle</span></div>
+                  <div class="code-line"><span class="token-verb">POST</span>  <span class="token-endpoint">/api/auth/login</span> <span class="token-desc">&rarr; Issue signed JWT</span></div>
+                  <div class="code-line"><span class="token-verb">POST</span>  <span class="token-endpoint">/api/tickets/create</span> <span class="token-desc">&rarr; Validate &amp; persist</span></div>
+                  <div class="code-line"><span class="token-verb">GET</span>   <span class="token-endpoint">/api/tickets?status=</span> <span class="token-desc">&rarr; Indexed query</span></div>
+                  <div class="code-line"><span class="token-verb">PATCH</span> <span class="token-endpoint">/api/tickets/:id</span> <span class="token-desc">&rarr; Moderator resolution</span></div>
+                  <div class="code-line spacer"></div>
+                  <div class="code-line"><span class="token-comment">// MongoDB Schema Document</span></div>
+                  <div class="code-line">{</div>
+                  <div class="code-line indent"><span class="token-prop">"ticket_ref"</span>: <span class="token-val">"CM-2026-084"</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">"priority"</span>:   <span class="token-val">"LOW | MED | URGENT"</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">"status"</span>:     <span class="token-val">"OPEN | IN_REVIEW | RESOLVED"</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">"timeline"</span>:   [{ <span class="token-prop">"event"</span>: String, <span class="token-prop">"at"</span>: Date }]</div>
+                  <div class="code-line">}</div>
+                </div>
+                <div class="preview-footer" onclick="openSpecModal('cm-helphub')">
+                  <span>View full system schema &amp; endpoints</span>
+                  <span class="footer-arrow">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -193,66 +239,118 @@
 
           <!-- Project 02: Ultimate Frisbee Management System -->
           <article class="project-card">
-            <div class="card-terminal-bar">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
+            <div class="project-card-header">
+              <div class="project-badge-meta">
+                <span class="project-index-tag">02</span>
+                <span class="project-category-tag">Sports Management &amp; Scheduling Engine</span>
               </div>
-              <span class="terminal-title">Ultimate Frisbee Management System</span>
-              <span class="badge badge-accent">In Development</span>
+              <div class="project-status status-dev">
+                <span class="status-pulse-dot pulse-sky"></span>
+                <span class="status-label">In Active Development</span>
+              </div>
             </div>
 
-            <div class="card-body-grid">
-              <div class="card-primary-col">
-                <div class="project-index">02 / SPORTS MANAGEMENT</div>
+            <div class="project-card-content">
+              <!-- Left Column: Information, Highlights, Stack & Actions -->
+              <div class="project-info-pane">
                 <h3 class="project-title">Ultimate Frisbee Management System</h3>
-                <p class="project-category">Tournament Scheduling, Rosters &amp; Live Scoring</p>
-                <p class="project-summary">
-                  A tournament management platform that automates round-robin and elimination brackets, manages team rosters, schedules field assignments, and records live game scores.
+                <p class="project-tagline">Tournament Scheduling, Rostering &amp; Match Scoring Engine</p>
+                
+                <p class="project-description">
+                  A comprehensive sports management platform designed to automate round-robin and elimination tournament brackets, organize team rosters, allocate fields dynamically, and provide live game scoring feeds.
                 </p>
 
-                <div class="card-metadata-box">
-                  <div class="meta-col">
-                    <span class="meta-header">HIGHLIGHTS</span>
-                    <ul class="meta-bullet-list">
-                      <li>Automated Bracket Generation</li>
-                      <li>Team Rosters &amp; Player Eligibility</li>
-                      <li>Field Scheduling</li>
-                      <li>Live Game Scoring</li>
-                    </ul>
+                <!-- Key Technical Highlights -->
+                <div class="project-highlights-grid">
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Bracket Generation Algorithm</span>
                   </div>
-                  <div class="meta-col">
-                    <span class="meta-header">KEY FEATURES</span>
-                    <ul class="meta-bullet-list">
-                      <li>Round-robin and double-elimination formats</li>
-                      <li>Live logging of points and turnovers</li>
-                      <li>Automatic standings, point differential, and tiebreakers</li>
-                      <li>Validated MongoDB schemas ensuring schedule consistency</li>
-                    </ul>
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span>Roster &amp; Player Eligibility</span>
+                  </div>
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    <span>Live Point &amp; Turnover Tracker</span>
+                  </div>
+                  <div class="highlight-chip">
+                    <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="18" y1="20" x2="18" y2="10"/>
+                      <line x1="12" y1="20" x2="12" y2="4"/>
+                      <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <span>Automated Standings Differential</span>
                   </div>
                 </div>
-              </div>
 
-              <div class="card-secondary-col">
-                <div class="tech-stack-group">
-                  <span class="meta-header">TECH STACK</span>
+                <!-- Core Stack -->
+                <div class="project-tech-wrapper">
+                  <span class="tech-label">CORE STACK</span>
                   <div class="pill-cloud">
                     <span class="tech-pill">React.js</span>
                     <span class="tech-pill">Node.js</span>
                     <span class="tech-pill">Express.js</span>
                     <span class="tech-pill">MongoDB</span>
                     <span class="tech-pill">Tailwind CSS</span>
+                    <span class="tech-pill">REST API</span>
                   </div>
                 </div>
 
-                <div class="project-action-buttons">
+                <!-- Action Buttons -->
+                <div class="project-actions">
                   <button type="button" class="btn btn-spec" onclick="openSpecModal('frisbee-system')">
-                    &lt;/&gt; Architecture Details
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    Architecture Spec
                   </button>
-                  <div class="action-subgroup">
-                    <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-compact">Source</a>
-                  </div>
+                  <a href="https://github.com/PewPewwwwwwww" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    Source Code
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Code & Architecture Preview Window -->
+              <div class="project-preview-pane">
+                <div class="preview-header">
+                  <span class="preview-file"><span class="code-dot dot-sky"></span> tournament-engine.js</span>
+                  <span class="preview-tag">Algorithms &bull; MongoDB</span>
+                </div>
+                <div class="preview-code-body">
+                  <div class="code-line"><span class="token-comment">// Bracket Seeding &amp; Live Scoring Feeds</span></div>
+                  <div class="code-line"><span class="token-verb">POST</span>  <span class="token-endpoint">/api/tournaments/:id/seed</span> <span class="token-desc">&rarr; Generate brackets</span></div>
+                  <div class="code-line"><span class="token-verb">GET</span>   <span class="token-endpoint">/api/matches/:id/live</span> <span class="token-desc">&rarr; Real-time score stream</span></div>
+                  <div class="code-line"><span class="token-verb">POST</span>  <span class="token-endpoint">/api/matches/:id/point</span> <span class="token-desc">&rarr; Log assist &amp; turnover</span></div>
+                  <div class="code-line"><span class="token-verb">GET</span>   <span class="token-endpoint">/api/standings/diff</span> <span class="token-desc">&rarr; Points diff algorithm</span></div>
+                  <div class="code-line spacer"></div>
+                  <div class="code-line"><span class="token-comment">// Tournament Match Document</span></div>
+                  <div class="code-line">{</div>
+                  <div class="code-line indent"><span class="token-prop">"round"</span>:    <span class="token-val">"QUARTER_FINALS"</span>,</div>
+                  <div class="code-line indent"><span class="token-prop">"team_a"</span>:   { <span class="token-prop">"name"</span>: <span class="token-val">"Storm Discs"</span>, <span class="token-prop">"score"</span>: <span class="token-num">15</span> },</div>
+                  <div class="code-line indent"><span class="token-prop">"team_b"</span>:   { <span class="token-prop">"name"</span>: <span class="token-val">"Apex Ultimate"</span>, <span class="token-prop">"score"</span>: <span class="token-num">12</span> },</div>
+                  <div class="code-line indent"><span class="token-prop">"status"</span>:   <span class="token-val">"COMPLETED"</span></div>
+                  <div class="code-line">}</div>
+                </div>
+                <div class="preview-footer" onclick="openSpecModal('frisbee-system')">
+                  <span>View full system schema &amp; endpoints</span>
+                  <span class="footer-arrow">&rarr;</span>
                 </div>
               </div>
             </div>
